@@ -3792,7 +3792,7 @@ Blocks Styles
 }
 
 .artist.artist-style-2 .artist-content h6 {
-  color: #c5c5c5;
+	color: #FFFFFF;
 }
 
 .artist.artist-style-2 .artist-content::before {
@@ -3812,7 +3812,7 @@ Blocks Styles
 }
 
 .artist.artist-style-2 .social-icons ul li a {
-  color: #999999;
+	color: #FFFFFF;
 }
 
 .artist:hover .artist-thumb::before {
