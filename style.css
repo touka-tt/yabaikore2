@@ -24,7 +24,6 @@
 	|	|___ Button Styles
 	|	|___ Section Title
 	|	|___ Social Icons Styles
-	|	|___ Breadcrumb Area
 	|	|___ Progress Bar
 	|	|___ Accordion Styles
 	|	|___ Pagination Styles
@@ -906,7 +905,7 @@ blockquote {
 
 /* Background Image */
 .bg-image-1 {
-  background-image: url(https://placehold.jp/1920x898.png);
+  background-image: url("./images/bg/mainvisual.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2276,141 +2275,7 @@ button.cr-btn.cr-loadmore-btn {
   color: #ffffff;
 }
 
-/**
-* Breadcrumb Area
-*/
-.cr-breadcrumb {
-  padding-top: 120px;
-  padding-bottom: 150px;
-}
 
-.cr-breadcrumb h1 {
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 5px;
-}
-
-.cr-breadcrumb ul {
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.cr-breadcrumb ul li {
-  display: inline-block;
-  color: #ffffff;
-  font-style: italic;
-  font-family: "Raleway", sans-serif;
-}
-
-.cr-breadcrumb ul li::after {
-  content: "/";
-  padding: 0 3px;
-}
-
-.cr-breadcrumb ul li:last-child::after {
-  display: none;
-}
-
-.cr-breadcrumb ul li a {
-  display: inline-block;
-  color: #ffffff;
-}
-
-.cr-breadcrumb ul li a:hover {
-  text-decoration: underline;
-}
-
-.bg-breadcrumb-1 {
-  background-image: url(images/bg/bg-breadcrumb-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-2 {
-  background-image: url(images/bg/bg-breadcrumb-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-3 {
-  background-image: url(images/bg/bg-breadcrumb-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-4 {
-  background-image: url(images/bg/bg-breadcrumb-4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-5 {
-  background-image: url(images/bg/bg-breadcrumb-5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-6 {
-  background-image: url(images/bg/bg-breadcrumb-6.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-7 {
-  background-image: url(images/bg/bg-breadcrumb-7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-8 {
-  background-image: url(images/bg/bg-breadcrumb-8.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-9 {
-  background-image: url(images/bg/bg-breadcrumb-9.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-breadcrumb-10 {
-  background-image: url(images/bg/bg-breadcrumb-10.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cr-breadcrumb {
-    padding-top: 90px;
-    padding-bottom: 110px;
-  }
-  .cr-breadcrumb h1 {
-    font-size: 42px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .cr-breadcrumb {
-    padding-top: 70px;
-    padding-bottom: 90px;
-  }
-  .cr-breadcrumb h1 {
-    font-size: 36px;
-  }
-}
 
 /**
 * Progress Bar
