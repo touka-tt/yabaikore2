@@ -3741,6 +3741,11 @@ Blocks Styles
   }
 }
 
+.map {
+    height: 400px;
+    width: 100%;
+}
+
 
 /**
 Footer Styles
