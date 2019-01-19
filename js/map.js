@@ -10,7 +10,7 @@ function init() {
     // Basic options for a simple Google Map
     var mapOptions = {
 
-        zoom: 15, // How zoomed in you want the map to start at (always required)
+        zoom: 16, // How zoomed in you want the map to start at (always required)
         scrollwheel: false, //set to true to enable mouse scrolling while inside the map area
 
         // The latitude and longitude to center the map (always required)
