@@ -898,14 +898,14 @@ blockquote {
 }
 
 .bg-image-2 {
-  background-image: url(https://placehold.jp/1920x1080.png);
+  background-image: url("./images/bg/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .bg-image-3 {
-  background-image: url(https://placehold.jp/1920x1080.png);
+  background-image: url("./images/bg/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
