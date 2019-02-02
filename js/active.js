@@ -199,7 +199,7 @@
 
 	/* Mobilemenu Activation */
 	$('nav.bn-navigation').meanmenu({
-		meanMenuClose: '<img src="images/icons/icon-close.png" alt="close icon">',
+		meanMenuClose: '<img src="images/icon-close.png" alt="close icon">',
 		meanMenuCloseSize: '18px',
 		meanScreenWidth: '991',
 		meanExpandableChildren: true,
