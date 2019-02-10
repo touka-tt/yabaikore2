@@ -2827,9 +2827,9 @@ Blocks Styles
 */
 .banner {
   min-height: 100vh;
-  display: -webkit-box !important;
+/*  display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important;
+  display: flex !important;*/
   overflow: hidden;
 }
 
