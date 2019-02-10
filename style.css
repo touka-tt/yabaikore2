@@ -3173,6 +3173,7 @@ Blocks Styles
 	left: 0;
 	right: 0;
 	margin:0 auto;
+	margin-top: -10%;
 }
 .banner-title #title2 {
 	width: 35%;
@@ -3180,6 +3181,7 @@ Blocks Styles
 	left: 0;
 	right: 0;
 	margin:0 auto;
+	margin-top: -15%;
 }
 .banner-title #title1 {
 	width: 90%;
@@ -3187,6 +3189,7 @@ Blocks Styles
 	left: 0;
 	right: 0;
 	margin:0 auto;
+	margin-top: -30%;
 }
 
 /**
