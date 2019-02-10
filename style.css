@@ -905,7 +905,7 @@ blockquote {
 }
 
 .bg-image-3 {
-  background-image: url("./images/bg/bg2.jpg");
+  background-image: url("./images/bg/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3161,6 +3161,33 @@ Blocks Styles
   .banner-text h1 {
     font-size: 32px;
   }
+}
+
+.banner-title {
+	position: relative;
+}
+
+.banner-title #title3 {
+	position: absolute;
+	width: 30%;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	margin-top: -10%;
+}
+.banner-title #title2 {
+	width: 30%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+}
+.banner-title #title1 {
+	width: 90%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
 }
 
 /**
