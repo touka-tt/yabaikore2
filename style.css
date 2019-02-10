@@ -2511,7 +2511,7 @@ Blocks Styles
 * Header Styles
 */
 .header {
-  z-index: 80;
+  z-index: 10000;
 }
 
 .header .header-inner {
@@ -2582,7 +2582,7 @@ Blocks Styles
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 82;
+  z-index: 10000;
   -webkit-animation: crSlideInDown 0.5s ease-out 0s 1 both;
   animation: crSlideInDown 0.5s ease-out 0s 1 both;
 }
@@ -2593,7 +2593,7 @@ Blocks Styles
 
 /* Header Style 2 */
 .header-style-2 {
-  z-index: 80;
+  z-index: 10000;
 }
 
 .header-style-2.bg-dark {
@@ -4153,4 +4153,111 @@ Footer Styles
   }
 }
 
+
+/**
+Items Styles
+*/
+.items {
+	position: relative;
+	z-index: 1000;
+}
+.items .item {
+	position: absolute;
+}
+
+.items .item1 {
+	width: 30%;
+	right: 10%;
+	margin-top: 20%;
+}
+
+.items .item2 {
+	width: 15%;
+	left: 20%;
+	margin-top: 40%;
+}
+
+.items .item3 {
+	width: 5%;
+	right: 15%;
+	margin-top: 60%;
+}
+
+.items .item4 {
+	width: 10%;
+	left: 23%;
+	margin-top: 80%;
+}
+
+.items .item5 {
+	width: 20%;
+	right: 20%;
+	margin-top: 100%;
+}
+
+.items .item6 {
+	width: 20%;
+	left: 40%;
+	margin-top: 120%;
+}
+
+.items .item7 {
+	width: 30%;
+	right: 10%;
+	margin-top: 140%;
+}
+
+.items .item8 {
+	width: 20%;
+	left: 30%;
+	margin-top: 160%;
+}
+
+.items .item9 {
+	width: 30%;
+	right: 10%;
+	margin-top: 180%;
+}
+
+.items .item10 {
+	width: 15%;
+	left: 20%;
+	margin-top: 200%;
+}
+
+.items .item11 {
+	width: 5%;
+	right: 20%;
+	margin-top: 220%;
+}
+
+.items .item12 {
+	width: 10%;
+	left: 30%;
+	margin-top: 230%;
+}
+
+.items .item13 {
+	width: 10%;
+	right: 20%;
+	margin-top: 240%;
+}
+
+.items .item14 {
+	width: 15%;
+	left: 50%;
+	margin-top: 260%;
+}
+
+.items .item15 {
+	width: 10%;
+	right: 45%;
+	margin-top: 280%;
+}
+
+.items .item16 {
+	width: 10%;
+	left: 5%;
+	margin-top: 300%;
+}
 /*# sourceMappingURL=style.css.map */
