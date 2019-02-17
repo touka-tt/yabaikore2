@@ -1,18 +1,8 @@
-/*********************************************************************************
-
-	Template Name: Blazen - Event and Exhibition Bootstrap4 Template
-	Description: A perfect multi-concept template for event or event management websites. It comes with nice and clean design.
-	Version: 1.0
-
-	Note: This is plugins js. Common plugins include here.
-
-**********************************************************************************/
-
-
 /*===============================================================================
     [ INDEX ]
 =================================================================================
 
+	Isotope
 	Avoid Console
 	ScrollUp
 	Fake Loader
@@ -26,12 +16,49 @@
 	Twitter Fetcher
 	Sticky Sidebar
 	Parallax
+	
 
 =================================================================================
     [ END INDEX ]
 ================================================================================*/
 
 
+/*========== Isotope ================*/
+$(function () {
+	// Portfolio Grid
+	var $container = $('.artist-grid');
+
+	$container.isotope({
+		itemSelector: '.artist-item',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 0
+		},
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		}
+	})
+
+
+	// bind filter button click
+	$('.artist-filter').on('click', '.categories', function () {
+		var filterValue = $(this).attr('data-filter');
+		$container.isotope({ filter: filterValue });
+	});
+
+	// change active class on categories
+	$('.categories-filter').each(function (i, buttonGroup) {
+		var $buttonGroup = $(buttonGroup);
+		$buttonGroup.on('click', '.categories', function () {
+			$buttonGroup.find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+});
+  
+  
 /*========== Avoid Console ==========*/
 (function() {
 	var method;
