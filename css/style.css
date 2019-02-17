@@ -2779,32 +2779,6 @@ Banner Styles
 /**
 * Artist Styles
 */
-.filtertab {
-    margin: 0 0 15px;
-    padding: 0;
-    text-align: center;
-}
-
-.filtertab li {
-	display: inline-block;
-	list-style: none;
-}
-
-.filtertab li a {
-	display: block;
-	color: #222;
-	font-size: 13px;
-	font-weight: 400;
-	letter-spacing: 1.5px;
-	margin-left: 11px;
-	margin-right: 11px;
-	text-transform: uppercase;
-}
-
-.filtertab li a.active {
-	color: #17a697;
-}
-
 .artist {
   display: -webkit-box;
   display: -ms-flexbox;
