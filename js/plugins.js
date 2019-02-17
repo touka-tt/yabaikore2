@@ -26,9 +26,23 @@
 /*========== Isotope ================*/
 $(function () {
 	// Portfolio Grid
-	var $container = $('.artist-grid');
+	var $containermain = $('.artist-grid-main');
+	var $containersub = $('.artist-grid-sub');
 
-	$container.isotope({
+	$containermain.isotope({
+		itemSelector: '.artist-item',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 0
+		},
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		}
+	})
+	
+	$containersub.isotope({
 		itemSelector: '.artist-item',
 		layoutMode: 'fitRows',
 		fitRows: {
@@ -43,13 +57,28 @@ $(function () {
 
 
 	// bind filter button click
-	$('.artist-filter').on('click', '.categories', function () {
+	$('.artist-filter-main').on('click', '.categories', function () {
 		var filterValue = $(this).attr('data-filter');
-		$container.isotope({ filter: filterValue });
+		$containermain.isotope({ filter: filterValue });
+	});
+	
+	// bind filter button click
+	$('.artist-filter-sub').on('click', '.categories', function () {
+		var filterValue = $(this).attr('data-filter');
+		$containersub.isotope({ filter: filterValue });
 	});
 
 	// change active class on categories
-	$('.categories-filter').each(function (i, buttonGroup) {
+	$('.categories-filter-main').each(function (i, buttonGroup) {
+		var $buttonGroup = $(buttonGroup);
+		$buttonGroup.on('click', '.categories', function () {
+			$buttonGroup.find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+	
+	// change active class on categories
+	$('.categories-filter-sub').each(function (i, buttonGroup) {
 		var $buttonGroup = $(buttonGroup);
 		$buttonGroup.on('click', '.categories', function () {
 			$buttonGroup.find('.active').removeClass('active');
