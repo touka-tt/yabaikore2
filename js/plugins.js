@@ -69,19 +69,19 @@ $(function () {
 	});
 
 	// change active class on categories
-	$('.categories-filter-main').each(function (i, buttonGroup) {
-		var $buttonGroup = $(buttonGroup);
-		$buttonGroup.on('click', '.categories', function () {
-			$buttonGroup.find('.active').removeClass('active');
+	$('.categories-filter-main').each(function (i, buttonGroupMain) {
+		var $buttonGroupMain = $(buttonGroupMain);
+		$buttonGroupMain.on('click', '.categories', function () {
+			$buttonGroupMain.find('.active').removeClass('active');
 			$(this).addClass('active');
 		});
 	});
 	
 	// change active class on categories
-	$('.categories-filter-sub').each(function (i, buttonGroup) {
-		var $buttonGroup = $(buttonGroup);
-		$buttonGroup.on('click', '.categories', function () {
-			$buttonGroup.find('.active').removeClass('active');
+	$('.categories-filter-sub').each(function (i, buttonGroupSub) {
+		var $buttonGroupSub = $(buttonGroupSub);
+		$buttonGroupSub.on('click', '.categories', function () {
+			$buttonGroupSub.find('.active').removeClass('active');
 			$(this).addClass('active');
 		});
 	});

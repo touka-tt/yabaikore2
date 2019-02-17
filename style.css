@@ -3768,12 +3768,12 @@ Blocks Styles
 .filtertab li {
 	display: inline-block;
 	list-style: none;
+	color: #fff;
 }
 
 .filtertab li a {
 	display: block;
-	color: #222;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 400;
 	letter-spacing: 1.5px;
 	margin-left: 11px;
@@ -3782,7 +3782,12 @@ Blocks Styles
 }
 
 .filtertab li a.active {
-	color: #17a697;
+	color: #de2532;
+	font-weight: bold;
+}
+
+.filtertab li a:hover {
+	cursor: pointer;
 }
 
 
