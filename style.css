@@ -3788,6 +3788,7 @@ Blocks Styles
 
 .filtertab li a:hover {
 	cursor: pointer;
+	color: #de2532;
 }
 
 
