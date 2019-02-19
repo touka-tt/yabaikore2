@@ -1,18 +1,8 @@
-/*********************************************************************************
-
-	Template Name: Blazen - Event and Exhibition Bootstrap4 Template
-	Description: A perfect multi-concept template for event or event management websites. It comes with nice and clean design.
-	Version: 1.0
-
-	Note: This is plugins js. Common plugins include here.
-
-**********************************************************************************/
-
-
 /*===============================================================================
     [ INDEX ]
 =================================================================================
 
+	Isotope
 	Avoid Console
 	ScrollUp
 	Fake Loader
@@ -26,12 +16,78 @@
 	Twitter Fetcher
 	Sticky Sidebar
 	Parallax
+	
 
 =================================================================================
     [ END INDEX ]
 ================================================================================*/
 
 
+/*========== Isotope ================*/
+$(function () {
+	// Portfolio Grid
+	var $containermain = $('.artist-grid-main');
+	var $containersub = $('.artist-grid-sub');
+
+	$containermain.isotope({
+		itemSelector: '.artist-item',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 0
+		},
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		}
+	})
+	
+	$containersub.isotope({
+		itemSelector: '.artist-item',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 0
+		},
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		}
+	})
+
+
+	// bind filter button click
+	$('.artist-filter-main').on('click', '.categories', function () {
+		var filterValue = $(this).attr('data-filter');
+		$containermain.isotope({ filter: filterValue });
+	});
+	
+	// bind filter button click
+	$('.artist-filter-sub').on('click', '.categories', function () {
+		var filterValue = $(this).attr('data-filter');
+		$containersub.isotope({ filter: filterValue });
+	});
+
+	// change active class on categories
+	$('.categories-filter-main').each(function (i, buttonGroupMain) {
+		var $buttonGroupMain = $(buttonGroupMain);
+		$buttonGroupMain.on('click', '.categories', function () {
+			$buttonGroupMain.find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+	
+	// change active class on categories
+	$('.categories-filter-sub').each(function (i, buttonGroupSub) {
+		var $buttonGroupSub = $(buttonGroupSub);
+		$buttonGroupSub.on('click', '.categories', function () {
+			$buttonGroupSub.find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+});
+  
+  
 /*========== Avoid Console ==========*/
 (function() {
 	var method;
