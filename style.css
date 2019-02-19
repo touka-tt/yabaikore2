@@ -1,12 +1,3 @@
-/*********************************************************************************
-
-	Template Name: Blazen - Event and Exhibition Bootstrap4 Template
-	Description: A perfect multi-concept template for event or event management websites. It comes with nice and clean design.
-	Version: 1.0
-
-	Note: This is style css.
-
-**********************************************************************************/
 /**************************************************************
 	
 	STYLESHEET INDEXING
@@ -255,7 +246,7 @@ blockquote cite,
 blockquote small {
   font-size: 14px;
   font-weight: normal;
-  text-transform: uppercase;
+  
 }
 
 blockquote em,
@@ -439,7 +430,7 @@ caption {
 
 th {
   font-weight: bold;
-  text-transform: uppercase;
+  
 }
 
 td {
@@ -1641,7 +1632,7 @@ button.cr-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  
   color: #ffffff;
   /* Size Variations */
   /* Color Variations */
@@ -1907,14 +1898,14 @@ button.cr-btn.cr-loadmore-btn {
 .section-title h2 {
   font-weight: 700;
   color: #323334;
-  text-transform: uppercase;
+  
   color: #323334;
   margin-bottom: 8px;
 }
 
 .section-title h3 {
   font-weight: 400;
-  text-transform: uppercase;
+  
 }
 
 .section-title p {
@@ -2279,7 +2270,7 @@ button.cr-btn.cr-loadmore-btn {
   font-size: 12px;
   font-weight: 700;
   color: #323334;
-  text-transform: uppercase;
+  
   letter-spacing: 0.5px;
   margin-bottom: 3px;
   line-height: 24px;
@@ -2361,7 +2352,7 @@ button.cr-btn.cr-loadmore-btn {
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #3e3e3e;
-  text-transform: uppercase;
+  
   display: block;
   padding: 18px 0;
   padding-right: 20px;
@@ -2410,7 +2401,7 @@ button.cr-btn.cr-loadmore-btn {
   font-size: 18px;
   font-weight: 700;
   color: #323334;
-  text-transform: uppercase;
+  
   overflow: hidden;
 }
 
@@ -2511,7 +2502,7 @@ Blocks Styles
 * Header Styles
 */
 .header {
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .header .header-inner {
@@ -2582,7 +2573,7 @@ Blocks Styles
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 1000;
   -webkit-animation: crSlideInDown 0.5s ease-out 0s 1 both;
   animation: crSlideInDown 0.5s ease-out 0s 1 both;
 }
@@ -2593,7 +2584,7 @@ Blocks Styles
 
 /* Header Style 2 */
 .header-style-2 {
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .header-style-2.bg-dark {
@@ -2743,7 +2734,7 @@ Blocks Styles
 
 .bn-navigation ul li a {
   display: inline-block;
-  text-transform: uppercase;
+  
   letter-spacing: 0.8px;
   color: #ffffff;
   font-size: 14px;
@@ -2839,14 +2830,14 @@ Blocks Styles
 }
 
 .banner-text h1 {
-  text-transform: uppercase;
+  
   font-size: 68px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .banner-text h2 {
-  text-transform: uppercase;
+  
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -2854,7 +2845,7 @@ Blocks Styles
 
 .banner-text h4 {
   font-weight: 700;
-  text-transform: uppercase;
+  
   font-family: "Lato", sans-serif;
 }
 
@@ -3222,7 +3213,7 @@ Blocks Styles
   margin-bottom: 0;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+  
 }
 
 .event-countdown .event-countdown-day {
@@ -3309,7 +3300,7 @@ Blocks Styles
 }
 
 .about-text h2 {
-  text-transform: uppercase;
+  
   margin-bottom: 30px;
 }
 
@@ -3340,7 +3331,7 @@ Blocks Styles
 }
 
 .about-page-skill-content > h3 {
-  text-transform: uppercase;
+  
   font-weight: 800;
   position: relative;
   padding-bottom: 20px;
@@ -3485,7 +3476,7 @@ Blocks Styles
 */
 .welcome-area-inner h3 {
   font-weight: 400;
-  text-transform: uppercase;
+  
   margin-top: -5px;
 }
 
@@ -3516,7 +3507,7 @@ Blocks Styles
   font-size: 200px;
   z-index: -1;
   line-height: 1;
-  text-transform: uppercase;
+  
   white-space: nowrap;
 }
 
@@ -3573,13 +3564,16 @@ Blocks Styles
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 1;
-  visibility: hidden;
-  opacity: 0;
+  #visibility: hidden;
+  #opacity: 0;
   -webkit-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+}
+.artist .artist-thumb:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .artist .artist-thumb img {
@@ -3620,7 +3614,7 @@ Blocks Styles
 }
 
 .artist .artist-content h4 {
-  text-transform: uppercase;
+  
   font-weight: 700;
 }
 
@@ -3630,13 +3624,17 @@ Blocks Styles
 }
 
 .artist .artist-content .social-icons {
-  border-top: 1px solid #f2f2f2;
-  padding-top: 8px;
   position: absolute;
   left: 30px;
   bottom: 40px;
   width: calc(100% - 60px);
 }
+
+.artist .artist-line {
+  border-top: 1px solid #f2f2f2;
+  margin: 8px 0;
+}  
+
 
 .artist.artist-reverse {
   -webkit-box-orient: vertical;
@@ -3679,7 +3677,7 @@ Blocks Styles
 
 .artist.artist-style-2 .artist-content h4 {
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .artist.artist-style-2 .artist-content .social-icons {
@@ -3768,6 +3766,37 @@ Blocks Styles
   }
 }
 
+.filtertab {
+    margin: 0 0 15px;
+    padding: 0;
+    text-align: center;
+}
+
+.filtertab li {
+	display: inline-block;
+	list-style: none;
+	color: #fff;
+}
+
+.filtertab li a {
+	display: block;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	margin-left: 11px;
+	margin-right: 11px;
+	
+}
+
+.filtertab li a.active {
+	color: #de2532;
+	font-weight: bold;
+}
+
+.filtertab li a:hover {
+	cursor: pointer;
+}
+
 
 .white-popup {
   position: relative;
@@ -3776,6 +3805,7 @@ Blocks Styles
   width: auto;
   max-width: 500px;
   margin: 20px auto;
+  z-index: 1001;
 }
 
 .map {
@@ -3822,7 +3852,7 @@ Footer Styles
 
 .footer-newsletter-form h4 {
   color: #ebebec;
-  text-transform: uppercase;
+  
   margin-bottom: 0;
   padding-right: 34px;
 }
@@ -3872,7 +3902,7 @@ Footer Styles
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  
   color: #ffffff;
   -ms-flex-negative: 100;
   flex-shrink: 100;
@@ -3906,7 +3936,7 @@ Footer Styles
 .widgets.footer-widgets .widget-title {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
+  
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -4061,7 +4091,7 @@ Footer Styles
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  
   color: #ffffff;
   -webkit-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
