@@ -40,7 +40,11 @@ $(function () {
 			duration: 750,
 			easing: 'linear',
 			queue: false
-		}
+		},
+		getSortData: {
+    		name: '[artistname]'
+		},
+		sortBy: 'name'
 	})
 	
 	$containersub.isotope({
@@ -53,7 +57,11 @@ $(function () {
 			duration: 750,
 			easing: 'linear',
 			queue: false
-		}
+		},
+		getSortData: {
+    		name: '[artistname]'
+		},
+		sortBy: 'name'
 	})
 	
 	$containerdommune.isotope({
@@ -66,7 +74,11 @@ $(function () {
 			duration: 750,
 			easing: 'linear',
 			queue: false
-		}
+		},
+		getSortData: {
+    		name: '[artistname]'
+		},
+		sortBy: 'name'
 	})
 
 
