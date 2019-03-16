@@ -28,6 +28,7 @@ $(function () {
 	// Portfolio Grid
 	var $containermain = $('.artist-grid-main');
 	var $containersub = $('.artist-grid-sub');
+	var $containerdommune = $('.artist-grid-dommune');
 
 	$containermain.isotope({
 		itemSelector: '.artist-item',
@@ -43,6 +44,19 @@ $(function () {
 	})
 	
 	$containersub.isotope({
+		itemSelector: '.artist-item',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 0
+		},
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		}
+	})
+	
+	$containerdommune.isotope({
 		itemSelector: '.artist-item',
 		layoutMode: 'fitRows',
 		fitRows: {
