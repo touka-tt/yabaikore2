@@ -4290,4 +4290,32 @@ Items Styles
 	left: 5%;
 	margin-top: 300%;
 }
+
+#news {
+	height: 430px;
+}
+
+#news .container {
+	height: 300px;
+	overflow: auto;
+}
+
+#news .container dt {
+	border-top: 1px dashed rgba(255,255,255, 0.5);
+}
+
+.bangface {
+	background: rgba(255,255,255,0.8);
+}
+
+.tenichi {
+  background: rgba(255,128,0,0.8);
+}
+
+.fuckoka {
+	background: rgba(255,255,0,0.8);
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
