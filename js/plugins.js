@@ -43,8 +43,7 @@ $(function () {
 		},
 		getSortData: {
     		name: '[artistname]'
-		},
-		sortBy: 'name'
+		}
 	})
 	
 	$containersub.isotope({
@@ -60,8 +59,7 @@ $(function () {
 		},
 		getSortData: {
     		name: '[artistname]'
-		},
-		sortBy: 'name'
+		}
 	})
 	
 	$containerdommune.isotope({
@@ -77,8 +75,7 @@ $(function () {
 		},
 		getSortData: {
     		name: '[artistname]'
-		},
-		sortBy: 'name'
+		}
 	})
 
 
