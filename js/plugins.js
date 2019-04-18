@@ -28,6 +28,7 @@ $(function () {
 	// Portfolio Grid
 	var $containermain = $('.artist-grid-main');
 	var $containersub = $('.artist-grid-sub');
+	var $containerlounge = $('.artist-grid-lounge');
 	var $containerdommune = $('.artist-grid-dommune');
 
 	$containermain.isotope({
@@ -47,6 +48,22 @@ $(function () {
 	})
 	
 	$containersub.isotope({
+		itemSelector: '.artist-item',
+		layoutMode: 'fitRows',
+		fitRows: {
+			gutter: 0
+		},
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		getSortData: {
+    		name: '[artistname]'
+		}
+	})
+	
+	$containerlounge.isotope({
 		itemSelector: '.artist-item',
 		layoutMode: 'fitRows',
 		fitRows: {
@@ -90,6 +107,12 @@ $(function () {
 		var filterValue = $(this).attr('data-filter');
 		$containersub.isotope({ filter: filterValue });
 	});
+	
+	// bind filter button click
+	$('.artist-filter-lounge').on('click', '.categories', function () {
+		var filterValue = $(this).attr('data-filter');
+		$containerlounge.isotope({ filter: filterValue });
+	});
 
 	// change active class on categories
 	$('.categories-filter-main').each(function (i, buttonGroupMain) {
@@ -105,6 +128,15 @@ $(function () {
 		var $buttonGroupSub = $(buttonGroupSub);
 		$buttonGroupSub.on('click', '.categories', function () {
 			$buttonGroupSub.find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+	
+	// change active class on categories
+	$('.categories-filter-lounge').each(function (i, buttonGroupLounge) {
+		var $buttonGroupLounge = $(buttonGroupLounge);
+		$buttonGroupLounge.on('click', '.categories', function () {
+			$buttonGroupLounge.find('.active').removeClass('active');
 			$(this).addClass('active');
 		});
 	});
