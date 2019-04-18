@@ -3572,6 +3572,11 @@ Blocks Styles
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
 }
+
+#artist-teuchi::before {
+	background: rgba(0, 0, 0, 0);
+}
+
 .artist .artist-thumb:hover {
   background: rgba(0, 0, 0, 0.05);
 }
